@@ -1,0 +1,35 @@
+.todos-list {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+
+.todo {
+  background-color: whitesmoke;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.todo-title {
+  text-transform: capitalize;
+}
+
+.todo-description {
+  font-size: 13px;
+}
+
+.todo-update-button {
+  width: auto;
+  background-color: rgb(50, 115, 255);
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.todo-delete-button {
+  width: auto;
+  background-color: rgb(250, 64, 64);
+  margin-top: 10px;
+}
