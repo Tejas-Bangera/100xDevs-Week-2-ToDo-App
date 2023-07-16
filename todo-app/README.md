@@ -1,8 +1,65 @@
-# Getting Started with Create React App
+# Basic ToDo App
+
+![ToDo App](./screenshots/image.png)
+
+Developed a basic todo website that can create, display list of todos and delete a specific todo from the list.
+
+This project only contains the frontend of the website, the backend program is available in the `solutions` branch of [100xDevs-Week-2-Assignments](https://github.com/Tejas-Bangera/100xDevs-Week-2-Assignments/blob/solutions/02-nodejs/todoServer.js) repository.
+
+## Create a ToDo
+
+![Create ToDo](./screenshots/Create-ToDo.gif)
+
+- Used `useEffect` hook and `fetch` to get the list of todos from the todos server listening on port 4000.
+- Array of todos and setTodos function are created with `useState` hook to dynamically render the todos on update.
+- The `Submit` button will send a `POST` request with title and description in the request body to the backend server which will create the ToDo and on successful creation sends back a `200` response with list of updated todos.
+- The updated todos is then updated in the `useState` variable.
+
+## Delete a ToDo
+
+![Delete ToDo](./screenshots/Delete-ToDo.gif)
+
+- The Delete button will send a `DELETE` request with the id seleted ToDo to be deleted to the backend server.
+- The route of the backend server will process this request accessing the todo id from the query parameter and find and delete the todos from the todos list.
+- On success it returns a `200` response with the list of updated todos which is then updated using the `useState` todos variable.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Setup and Run
+
+#### ⚠ Note: Before you run this application make sure you have the backend server up and running!
+
+Go to [100xDevs-Week-2-Assignments](https://github.com/Tejas-Bangera/100xDevs-Week-2-Assignments) repository and clone the project.
+
+In the `soltuions` branch go to `/02-nodejs` directory and install the required dependencies using the below command in the terminal,
+
+```bash
+npm install
+```
+
+and run todoServer using the below command.
+
+```bash
+node todoServer.js
+```
+
+With the backend server up and running, setup this project locally on your device by cloning it.
+
+Get into the `./todo-app` directory and run the below command to install dependencies
+
+```bash
+npm install
+```
+
+Run the application
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Available Scripts from Create-React-App
 
 In the project directory, you can run:
 
