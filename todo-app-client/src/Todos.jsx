@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import "./todos.css";
 
 const Todos = ({ todos, setTodos }) => {
-  useEffect(getTodos, []);
+  useEffect(() => {
+    getTodos();
+  }, []);
 
   function getTodos() {
     fetch("http://localhost:4000/todos", {

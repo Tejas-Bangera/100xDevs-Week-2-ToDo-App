@@ -1,4 +1,4 @@
-# Basic ToDo App
+# My ToDo App
 
 ![ToDo App](./screenshots/image.png)
 
@@ -27,17 +27,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Setup and Run
 
-#### ⚠ Note: Before you run this application make sure you have the backend server up and running!
+#### :warning: Note: Before you run this application make sure you have the backend server up and running!
 
-Go to [100xDevs-Week-2-Assignments](https://github.com/Tejas-Bangera/100xDevs-Week-2-Assignments) repository and clone the project.
-
-In the `soltuions` branch go to `/02-nodejs` directory and install the required dependencies using the below command in the terminal,
+After **cloning** the project locally, go to `/todo-app-api` directory in your local machine and run the below command to install all the dependencies.
 
 ```bash
 npm install
 ```
 
-and run todoServer using the below command.
+and run todo server using the below command.
 
 ```bash
 node todoServer.js
@@ -45,7 +43,7 @@ node todoServer.js
 
 With the backend server up and running, setup this project locally on your device by cloning it.
 
-Get into the `./todo-app` directory and run the below command to install dependencies
+Get into the `/todo-app-client` directory and run the below command to install dependencies
 
 ```bash
 npm install
@@ -57,7 +55,7 @@ Run the application
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open http://localhost:3000 to view it in your browser.
 
 ## Available Scripts from Create-React-App
 
@@ -66,7 +64,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open http://localhost:3000 to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.

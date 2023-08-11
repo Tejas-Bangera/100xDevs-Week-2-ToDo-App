@@ -4,6 +4,7 @@ import Todos from "./Todos";
 
 function App() {
   const [todos, setTodos] = useState([]);
+
   function addTodo(event) {
     event.preventDefault();
 
