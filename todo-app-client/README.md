@@ -1,25 +1,25 @@
-# My ToDo App
+# My Todo App
 
-![ToDo App](./screenshots/image.png)
+![Todo App](./screenshots/image.png)
 
 Developed a basic todo website that can create, display list of todos and delete a specific todo from the list.
 
 This project only contains the frontend of the website, the backend program is available in the `solutions` branch of [100xDevs-Week-2-Assignments](https://github.com/Tejas-Bangera/100xDevs-Week-2-Assignments/blob/solutions/02-nodejs/todoServer.js) repository.
 
-## Create a ToDo
+## Create a Todo
 
-![Create ToDo](./screenshots/Create-ToDo.gif)
+![Create Todo](./screenshots/Create-ToDo.gif)
 
 - Used `useEffect` hook and `fetch` to get the list of todos from the todos server listening on port 4000.
 - Array of todos and setTodos function are created with `useState` hook to dynamically render the todos on update.
-- The `Submit` button will send a `POST` request with title and description in the request body to the backend server which will create the ToDo and on successful creation sends back a `200` response with list of updated todos.
+- The `Submit` button will send a `POST` request with title and description in the request body to the backend server which will create the Todo and on successful creation sends back a `200` response with list of updated todos.
 - The updated todos is then updated in the `useState` variable.
 
-## Delete a ToDo
+## Delete a Todo
 
-![Delete ToDo](./screenshots/Delete-ToDo.gif)
+![Delete Todo](./screenshots/Delete-ToDo.gif)
 
-- The Delete button will send a `DELETE` request with the id seleted ToDo to be deleted to the backend server.
+- The Delete button will send a `DELETE` request with the id seleted Todo to be deleted to the backend server.
 - The route of the backend server will process this request accessing the todo id from the query parameter and find and delete the todos from the todos list.
 - On success it returns a `200` response with the list of updated todos which is then updated using the `useState` todos variable.
 
