@@ -1,6 +1,6 @@
 # My Todo App
 
-Developed a basic todo `React` app that can create, display your list of todos and delete a specific todo from your list.
+Developed a basic todo `React` app that can create, display your list of todos and delete a specific todo from your list once complete.
 As you can see this is not a monorepo, hence to check this project out you have to go to individual folders to run them locally.
 
 ## Project Setup and Run
